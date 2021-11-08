@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:backgroundTint="@color/black"
+    android:backgroundTint="#008EFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/main_title_tv"
-        android:layout_width="411dp"
-        android:layout_height="42dp"
-        android:background="#959292"
-        android:backgroundTint="#4A4848"
+        android:layout_width="403dp"
+        android:layout_height="20dp"
+        android:background="#0A87EA"
+        android:backgroundTint="#F20505"
         android:text="TicTacToe"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="15sp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +31,8 @@
 
     <ImageButton
         android:id="@+id/imageButton0"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -41,8 +41,8 @@
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton0"
@@ -51,18 +51,21 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/imageButton1"
+        app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="@+id/imageButton1"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton0"
@@ -71,8 +74,8 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton3"
@@ -81,8 +84,8 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton4"
@@ -91,8 +94,8 @@
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton3"
@@ -101,8 +104,8 @@
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton6"
@@ -111,8 +114,8 @@
 
     <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
+        android:layout_width="120dp"
+        android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton7"
@@ -120,17 +123,26 @@
         app:srcCompat="@drawable/empty" />
 
 
-
-
-
     <ImageButton
         android:id="@+id/imageButton9"
-        android:layout_width="0dp"
-        android:layout_height="88dp"
+        android:layout_width="357dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
         app:srcCompat="@drawable/oplay" />
 
+    <Button
+        android:id="@+id/resetGame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
+        android:text="Reset Game"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/imageButton6"
+        tools:layout_editor_absoluteX="3dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
