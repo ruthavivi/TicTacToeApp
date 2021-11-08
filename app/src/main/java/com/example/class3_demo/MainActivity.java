@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
@@ -90,6 +91,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         rountCount++;
 
+
+        if(checkWinner()){
+            ImageView image1=findViewById(R.id.imageView12);
+            if(gameState[0]==gameState[1]&&gameState[1]==gameState[2]){
+                Drawable row1=getResources().getDrawable(R.drawable.mark6);
+                image1.setImageDrawable(row1);
+            }else if(gameState[3]==gameState[4]&&gameState[4]==gameState[5]){
+                Drawable row2=getResources().getDrawable(R.drawable.mark7);
+                image1.setImageDrawable(row2);
+            }else if(gameState[6]==gameState[7]&&gameState[7]==gameState[8]) {
+                Drawable row3 = getResources().getDrawable(R.drawable.mark8);
+                image1.setImageDrawable(row3);
+            }else if(gameState[0]==gameState[3]&&gameState[3]==gameState[6]) {
+                Drawable colom1 = getResources().getDrawable(R.drawable.mark3);
+                image1.setImageDrawable(colom1);
+            }else if(gameState[1]==gameState[4]&&gameState[4]==gameState[7]) {
+                Drawable colom2 = getResources().getDrawable(R.drawable.mark4);
+                image1.setImageDrawable(colom2);
+            }else if(gameState[2]==gameState[5]&&gameState[5]==gameState[8]) {
+                Drawable colom3 = getResources().getDrawable(R.drawable.mark5);
+                image1.setImageDrawable(colom3);
+            }else if(gameState[0]==gameState[4]&&gameState[4]==gameState[8]) {
+                Drawable slant1 = getResources().getDrawable(R.drawable.mark1);
+                image1.setImageDrawable(slant1);
+            }else if(gameState[2]==gameState[4]&&gameState[4]==gameState[6]) {
+                Drawable slant2 = getResources().getDrawable(R.drawable.mark2);
+                image1.setImageDrawable(slant2);
+            }
+        }
+
+
         if(checkWinner())
         {
             if(activePlayer)
@@ -150,6 +182,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         rountCount=0;
         activePlayer=true;
+        ImageView image1=findViewById(R.id.imageView12);
+        Drawable emptyy=getResources().getDrawable(R.drawable.empty);
+        image1.setImageDrawable(emptyy);
+
         for(int i=0;i<buttons.length;i++)
         {
             gameState[i]=2;

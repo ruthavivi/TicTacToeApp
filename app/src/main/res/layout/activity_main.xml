@@ -31,101 +31,110 @@
 
     <ImageButton
         android:id="@+id/imageButton0"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageButton1"
         app:layout_constraintTop_toTopOf="@+id/status"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton0"
+        app:layout_constraintRight_toLeftOf="@id/imageButton2"
         app:layout_constraintTop_toTopOf="@+id/imageButton0"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/imageButton1"
+        app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="@+id/imageButton1"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton0"
+        app:layout_constraintRight_toLeftOf="@id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton0"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton3"
+        app:layout_constraintRight_toLeftOf="@id/imageButton5"
         app:layout_constraintTop_toTopOf="@+id/imageButton3"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton4"
+        app:layout_constraintRight_toRightOf="@id/imageButton2"
         app:layout_constraintTop_toTopOf="@+id/imageButton4"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton3"
+        app:layout_constraintRight_toLeftOf="@id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton6"
+        app:layout_constraintRight_toLeftOf="@id/imageButton8"
         app:layout_constraintTop_toTopOf="@+id/imageButton6"
         app:srcCompat="@drawable/empty" />
 
     <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="120dp"
+        android:layout_width="0dp"
         android:layout_height="105dp"
         android:insetLeft="6dp"
         android:insetRight="6dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton7"
+        app:layout_constraintRight_toRightOf="@id/imageButton5"
         app:layout_constraintTop_toTopOf="@+id/imageButton7"
         app:srcCompat="@drawable/empty" />
 
 
     <ImageButton
         android:id="@+id/imageButton9"
-        android:layout_width="357dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -144,5 +153,19 @@
         android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/imageButton6"
         tools:layout_editor_absoluteX="3dp" />
+
+   <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_title_tv"
+        app:srcCompat="@drawable/empty" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
